@@ -132,6 +132,7 @@ public class Main {
 
 }
 ```
+String可以藉由+來做字串串接，也可以+上其他類別或變數（該物件/變數會轉型成String）
 
 ## 4. java.util.Scanner 做 System Input
 ```java
