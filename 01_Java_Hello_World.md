@@ -14,7 +14,7 @@
 布林值|	boolean|	1|	true, false
 字元|	char|	16|	'\u0000' - '\uffff'
 
-```java=
+```java
 package helloWorld;
 
 public class Main {
@@ -58,7 +58,7 @@ void|	wait()
 void|	wait(long timeout)
 void|	wait(long timeout, int nanos)
 
-```java=
+```java
 package helloWorld;
 
 public class Main {
@@ -88,7 +88,7 @@ String (字串) 是一個常用又特別的物件。
 
 使用equals方法可以判斷就算reference不同，但內容是否相同。
 
-```java=
+```java
 package helloWorld;
 
 public class Main {
@@ -117,7 +117,7 @@ public class Main {
 * System.out.printf
   * 如同C的printf
 
-```java=
+```java
 package helloWorld;
 
 public class Main {
@@ -140,7 +140,7 @@ import java.util.Scanner;
 ```
 java.util的util是utility的意思，提供了許多類別，如集合 (ArrayList、HashMap等) 、隨機數產生、屬性檔案讀取、定時器等。
 
-```java=
+```java
 package helloWorld;
 import java.util.Scanner;
 
