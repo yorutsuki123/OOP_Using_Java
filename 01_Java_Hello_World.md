@@ -39,6 +39,21 @@ public class Main {
 
 }
 ```
+### 型態轉換
+
+等級由小到大：
+
+byte -> short -> char -> int -> long -> float -> double
+
+* 由小轉到大：可自動轉換
+* 由大轉到小：需強制轉型
+
+```java
+float f1 = 3.14; //ERROR, 3.14 is double
+float f2 = (float)3.14; //OK
+
+float f3 = 3; //OK
+```
 
 ## 2. Object
 
