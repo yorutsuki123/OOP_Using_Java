@@ -3,6 +3,8 @@
 
 ## 1. if else
 跟C差不多，只是括號內只能是boolean
+
+下面範例的method使用了foreach敘述句XD
 ```java
 package controlFlow;
 
