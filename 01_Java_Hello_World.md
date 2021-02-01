@@ -55,6 +55,16 @@ float f2 = (float)3.14; //OK
 float f3 = 3; //OK
 ```
 
+### final
+
+如同C語言的const，為不可修改（常數）的意思。
+
+變數名稱由大寫字母與底線組成。
+
+```java
+final double PI = 3.14159;
+```
+
 ## 2. Object
 
 Object被所有的物件所繼承。
@@ -90,6 +100,24 @@ public class Main {
 建構子類似物件的方法 (method) ，用來專門建立物件之用。
 
 一旦物件建立之後，物件就會包含許多屬性與方法。
+
+### null
+
+字面常數null代表該物件變數未指向任何物件。
+
+```java
+package helloWorld;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Object a = null;
+		a = new Object();
+		System.out.println(a.toString());
+	}
+
+}
+```
 
 ### String
 
