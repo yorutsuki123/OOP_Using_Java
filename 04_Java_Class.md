@@ -267,3 +267,48 @@ public class HololiveMember {
 	
 }
 ```
+
+### toString
+
+toString是Object所定義的method，我們可以將其override（覆寫）。
+```java
+package hololive;
+
+class Date {
+	
+	public int month;
+	public int day;
+	
+	public Date () {
+	}
+	
+	public Date (int m, int d) {
+		month = m;
+		day = d;
+	}
+	
+	public Date (String s, String split) {
+		String[] a = s.split(split);
+		month = Integer.parseInt(a[0]);
+		day = Integer.parseInt(a[1]);
+	}
+	
+	@Override
+	public String toString() {
+		return month + "月" + day + "日";
+	}
+	
+}
+
+public class Main {
+
+	public static void main(String[] args) {
+		Date d = new Date(12, 1);
+		System.out.println(d.toString()); // 12月1日
+		System.out.println(d); // 12月1日
+		System.out.println("湊あくあの誕生日は" + d); // 湊あくあの誕生日は12月1日
+	}
+
+}
+
+```
