@@ -312,3 +312,66 @@ public class Main {
 }
 
 ```
+
+## Static
+static代表靜態的，static的attribute和method在程式運行開始時就已經存在，不需要透過物件建立之後才能進行存取，但對於同類別的每個物件，static的attribute都是共通的。
+```java
+package hololive;
+
+public class HololiveMember {
+	
+	public String name;
+	public int generation;
+	public static int memberCount = 0;
+	
+	public HololiveMember (String n, int g) {
+		name = n;
+		generation = g;
+		memberCount++;
+	}
+	
+	public void selfIntro () {
+		System.out.printf("みなさん、こんにちは、私はホロライブ%d期生の%sです！\n",
+				generation, name);
+	}
+	
+	public static void printMemberCount() {
+		System.out.println("Member count: " + memberCount);
+	}
+	
+}
+
+```
+```java
+package hololive;
+
+public class Main {
+
+	public static void main(String[] args) {
+		HololiveMember.printMemberCount();
+		HololiveMember member1 = new HololiveMember("湊あくあ", 3);
+		HololiveMember.printMemberCount();
+		HololiveMember member2 = new HololiveMember("白上フブキ", 1);
+		HololiveMember.printMemberCount();
+		
+		System.out.println("\nHololiveMember's count: " + HololiveMember.memberCount);
+		System.out.println("member1's count: " + member1.memberCount);
+		System.out.println("member2's count: " + member2.memberCount);
+	}
+
+}
+```
+```
+Member count: 0
+Member count: 1
+Member count: 2
+
+HololiveMember's count: 2
+member1's count: 2
+member2's count: 2
+```
+:::danger
+**注意**
+
+static method不可以呼叫非static的method，也不可存取非static的attribute。
+:::
