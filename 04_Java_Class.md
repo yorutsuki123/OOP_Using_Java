@@ -371,7 +371,9 @@ member1's count: 2
 member2's count: 2
 ```
 :::danger
+
 **注意**
 
 static method不可以呼叫非static的method，也不可存取非static的attribute。
+
 :::
