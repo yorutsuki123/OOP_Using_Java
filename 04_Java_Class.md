@@ -1,5 +1,5 @@
 ###### tags: `JAVA`
-# 04. Class
+# 04. 類別（Class）
 
 ## 1. Class vs Object
 
