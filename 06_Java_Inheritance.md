@@ -161,7 +161,7 @@ public class Main {
 }
 ```
 ### UML圖
-![](https://i.imgur.com/5nv0lHb.png =50%x)
+![](https://i.imgur.com/5nv0lHb.png)
 
 
 ## 轉型
