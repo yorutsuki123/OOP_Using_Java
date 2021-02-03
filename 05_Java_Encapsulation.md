@@ -36,16 +36,16 @@ public class HololiveMember {
 	private static int memberCount = 0;
 	
 	public HololiveMember (String n, int g) {
-		name = new String(n);
+		name = n;
 		generation = g;
 		nickname = "";
 		memberCount++;
 	}
 
 	public HololiveMember (String n, String nn, int g) {
-		name = new String(n);
+		name = n;
 		generation = g;
-		nickname = new String(nn);
+		nickname = nn;
 		memberCount++;
 	}
 	
