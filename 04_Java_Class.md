@@ -211,10 +211,10 @@ public class Main {
 
 	public static void main(String[] args) {
 		HololiveMember member = new HololiveMember(
-				"湊あくあ", 3, "UC1opHUrw8rvnsadT-iGp7Cg",
-				 new Date(12, 1), 148, 44.5);
+				"湊あくあ", 2, "UC1opHUrw8rvnsadT-iGp7Cg",
+				 new Date(12, 1), 142, 44.5);
 		
-		member.selfIntro(); //みなさん、こんにちは、私はホロライブ3期生の湊あくあです！
+		member.selfIntro(); //みなさん、こんにちは、私はホロライブ2期生の湊あくあです！
 	}
 
 }
@@ -349,7 +349,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		HololiveMember.printMemberCount();
-		HololiveMember member1 = new HololiveMember("湊あくあ", 3);
+		HololiveMember member1 = new HololiveMember("湊あくあ", 2);
 		HololiveMember.printMemberCount();
 		HololiveMember member2 = new HololiveMember("白上フブキ", 1);
 		HololiveMember.printMemberCount();
