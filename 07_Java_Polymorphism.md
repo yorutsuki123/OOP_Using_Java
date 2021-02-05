@@ -10,7 +10,7 @@ package kensetsu;
 
 public class HololiveMember {
 
-	String name;
+	public String name;
 	
 	public HololiveMember(String n) {
 		name = n;
@@ -29,7 +29,7 @@ package kensetsu;
 
 public class AkukinMember extends HololiveMember {
 
-	int tara;
+	public int tara;
 	
 	public AkukinMember(String n, int tara) {
 		super(n);
@@ -50,7 +50,7 @@ package kensetsu;
 
 public class UsadaMember extends HololiveMember {
 
-	int ninjin;
+	public int ninjin;
 	
 	public UsadaMember(String n, int ninjin) {
 		super(n);
@@ -73,7 +73,7 @@ package kensetsu;
 
 public class Stream {
 
-	HololiveMember liver;
+	public HololiveMember liver;
 	
 	public Stream(HololiveMember m) {
 		liver = m;
@@ -221,3 +221,12 @@ Moona、家を作った<兎田建設>
 Moona、家を作った<兎田建設>
 今のにんじん：130
 ```
+
+## 練習
+Hololive成員都有一個姓名，且都會開實況（startStream），開實況都會說"こんにちは"。
+
+Hololive成員有鯊魚、船長等角色（subclass），鯊魚再開實況時則是說"A"，船長則會說"Ahoy"。
+
+並且，有一個Youtube的類別，有一個static的live的方法，其參數是Hololive成員，當live方法被呼叫時，會呼叫參數Hololive成員的startStream方法。
+
+在Controller類別中有一個main方法，當main被呼叫時會宣告一隻鯊魚，叫"Gura"，一隻船長叫"マリン"，一個普通的Hololive成員叫"ときのそら"，並呼叫3次Youtube.live方法，參數分別是上述這3個角色。
