@@ -169,7 +169,7 @@ UsadaMember u = (UsadaMember)h; //ClassCastException
 h是參考AkukinMember的物件，不能扮演UsadaMember。
 
 ## instanceof
-instanceof是java的運算子之一，用來測試一個object所參考的實例（instance）是否屬於某個class或屬於該class的subclass。
+instanceof是java的運算子之一，用來測試一個實例（instance）是否屬於某個class或屬於該class的subclass。
 ```java
 	AkukinMember a = new AkukinMember("湊あくあ", 1000);
 	HololiveMember h = a;
