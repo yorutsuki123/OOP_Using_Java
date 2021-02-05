@@ -157,7 +157,7 @@ AkukinMember a = (AkukinMember)h;
 ```
 這本身沒什麼問題，因為h原本就是參考AkukinMember的實例（instance）。
 
-~＊instance與object基本上是一樣意思XD~
+＊instance與object基本上是一樣意思XD
 
 -----
 
