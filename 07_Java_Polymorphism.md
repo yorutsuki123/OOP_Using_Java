@@ -197,7 +197,7 @@ public class Stream {
 		}
 		if (liver instanceof UsadaMember) {
 			((UsadaMember) liver).ninjin += 30;
-			System.out.println("今のタラ：" + ((UsadaMember) liver).ninjin);
+			System.out.println("今のにんじん：" + ((UsadaMember) liver).ninjin);
 		}
 	}
 
@@ -209,6 +209,7 @@ public class Stream {
 	}
 
 }
+
 ```
 ```
 ホロ鯖をログインしました！
@@ -218,5 +219,5 @@ public class Stream {
 ホロ鯖をログインしました！
 Moona、家を作った<兎田建設>
 Moona、家を作った<兎田建設>
-今のタラ：130
+今のにんじん：130
 ```
